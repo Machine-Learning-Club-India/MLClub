@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "10 essential books every ML enthusuiast must read"
-author: jane
+title:  "10 Essential Books Every ML Enthusuiast Must Read"
+author: himanshu
 categories: [ machine learning, books ]
 image: assets/images/books.jpg
 tags: [sticky]
