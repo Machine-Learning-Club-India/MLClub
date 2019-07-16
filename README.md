@@ -1,51 +1,32 @@
-# Jekyll Theme - Mundana by WowThemes.net
+# Machine Learning Club - India
 
-[Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/) &nbsp; | &nbsp; 
-[Download](https://github.com/wowthemesnet/mundana-theme-jekyll/archive/master.zip) &nbsp; | &nbsp; 
-[Buy me a coffe](https://www.wowthemes.net/donate/) &nbsp; | &nbsp; [Documentation](https://bootstrapstarter.com/bootstrap-templates/mundana-theme-jekyll/) &nbsp; | &nbsp; 
-[WordPress version](https://www.wowthemes.net/themes/mundana-wordpress/) 
+[Website](https://machine-learning-club-india.github.io/) &nbsp; | &nbsp; 
+[Contact Us](https://machine-learning-club-india.github.io/contact.html) &nbsp; | &nbsp; 
+[Buy me a coffe](https://machine-learning-club-india.github.io/buy-me-a-coffee.html) &nbsp; | &nbsp; 
+[Instagram](https://www.instagram.com/machine.learning.club/) &nbsp; | &nbsp; 
+[Facebook](https://www.facebook.com/machine.learning.club)
 
-![mundana jekyll theme screenshot](assets/images/screenshot.jpg)
 
-### Documentation
+### About Us
 
-[How to install & use](https://bootstrapstarter.com/bootstrap-templates/mundana-theme-jekyll/)
+1. ✍  Your Mentor to become ML expert
+2. 📚 We will share Personal Notes on Machine learning
 
-### Contribute to Mundana repository
 
-1. In the top-right corner of this page, click **Fork**.
+### Services
 
-2. Clone a copy of your fork on your local, replacing *YOUR-USERNAME* with your Github username.
+1. Training for R & Python
+2. Training on Data analytics in R & Python
+3. Data Science Consultants
+4. Natural Language Processing and Information Extraction Scientist
+5. Chatbot Developers
 
-   `git clone https://github.com/YOUR-USERNAME/mundana-theme-jekyll.git`
 
-3. **Create a branch**: 
+### Contribute to Machine Learning Club
 
-   `git checkout -b <my-new-feature-or-fix>`
-
-4. **Make necessary changes and commit those changes**:
-
-   `git add .`
-
-   `git commit -m "new feature or fix"`
-
-5. **Push changes**, replacing `<add-your-branch-name>` with the name of the branch you created earlier at step #3. :
-
-   `git push origin <add-your-branch-name>`
-
-6. Submit your changes for review. Go to your repository on GitHub, you'll see a **Compare & pull request** button. Click on that button. Now submit the pull request.
-
-That's it! Soon I'll be merging your changes into the master branch of this project. You will get a notification email once the changes have been merged. Thank you for your contribution.
+You can mail us you notes on **g.himanshu2312@gmail.com** for us to feature your notes for the community or you can just post on Instagram and Facebook and use **#selftaughtML**.
 
 
 ### Copyright
 
 Copyright (C) 2019 WowThemes.net.
-
-Theme designed and developed by [Sal](https://www.wowthemes.net), *free* under MIT license. 
-
-<a href="https://www.wowthemes.net/donate/" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
-
-### Live Demo
-
-[Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/)
