@@ -1,11 +1,11 @@
 # Site
-name: 'Mundana'
-description: 'Mundana is a free Jekyll theme for awesome people like you, Medium like.'
+name: 'Machine Learning Club'
+description: 'A Community of Self-Taught ML Enthusiasts.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: '/MLClub'
-disqus: 'demowebsite'
-email: 'wowthemesnet@gmail.com'
+disqus: 'machine-learning-club'
+email: 'g.himanshu2312@gmail.com'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 
 include: ["_pages"]
@@ -19,12 +19,12 @@ plugins:
   - jekyll-seo-tag
   
 authors:
-    sal:
-      name:           Sal
+    himanshu:
+      name:           Himanshu
       site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar1.jpg
-      bio:            "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
-      email:          wowthemesnet@gmail.com
+      avatar:         /assets/images/avatar_him.jpg
+      bio:            "Hi, I am Himanshu, the author of ML Club. I hope you like it!"
+      email:          g.himanshu2312@gmail.com
       twitter:        https://twitter.com/wowthemesnet
 
     jane:
@@ -43,8 +43,8 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      author: sal
-      avatar: /assets/images/avatar1.jpg
+      author: Himanshu
+      avatar: /assets/images/avatar_him.jpg
       
   # all pages
   - scope:
