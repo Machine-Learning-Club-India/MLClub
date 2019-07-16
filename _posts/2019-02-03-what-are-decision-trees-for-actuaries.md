@@ -19,7 +19,7 @@ Let's say you have < Location, Month, Temperature> as covariates to decide wheth
                     *f* : < Location, Month, Temperature> → Take Umbrella
 
 based on the data collected from people living in Mumbai and Delhi. We will get into that process of making decision trees later. But let's look at what the output will look like.
-![decision tree]({{ site.baseurl }}/assets/images/what-are-decision-trees-for-actuaries/1.png)
+![decision tree](assets/images/what-are-decision-trees-for-actuaries/1.png)
 
 ---
 
@@ -65,7 +65,7 @@ Main Loop:
 **Question 1: Which attribute is the best?**
 To answer that, let's take an illustration. Suppose we have a dataset where the Target variable takes 'Yes' 29 times and 'No' 35 times. We can either split on attribute A1 or A2. The node looks like as in the image:
 
-![tree diagram]({{ site.baseurl }}/assets/images/what-are-decision-trees-for-actuaries/2.png)
+![tree diagram](assets/images/what-are-decision-trees-for-actuaries/2.png)
 
 So A1 attribute creates 2 leaf nodes- Leaf Node 1 has classified most of the examples as positive and 5 negatives (No) and Leaf Node 2 has done the same thing, classified most examples as negative and a few as positives.
 
@@ -80,6 +80,6 @@ Now you would say that it is easy for a human to recognize if the leaf node is H
 The answer is Entropy. 
 The Entropy of a random variable is defined as :
 
-![entropy equation]({{ site.baseurl }}/assets/images/what-are-decision-trees-for-actuaries/3.png)
+![entropy equation](assets/images/what-are-decision-trees-for-actuaries/3.png)
 
 where n is all possible values of X.
