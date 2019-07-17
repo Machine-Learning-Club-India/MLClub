@@ -1,0 +1,51 @@
+---
+title: "Machine Learning Club"
+layout: default
+pagination:
+    enabled: true
+description: "Book Reviews"
+permalink: "/book-reviews.html"
+---
+
+
+<div class="container">
+    
+<!-- Books Intro -->
+<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative remove-site-content-margin">
+    <div class="pl-4 pr-0 h-100 tofront">
+        <div class="row justify-content-between">
+            <div class="col-md-5 pt-6 pb-6 align-self-center">
+                <h1 class="mb-3 font-weight-bold">Book Reviews</h1>
+                <p class="mb-3">
+                    Here are notes I've taken on books I've read. Some are in-depth, some are short, some include quotes. I've included ratings and genres for future sorting. excerpt: "My awesome reading notes. Some are in-depth, some are short, some include quotes. All are for me."
+                </p>
+                <a href="{{site.baseurl}}/about.html" class="btn btn-dark">Read More</a>
+            </div>
+            <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/assets/images/home.jpg);">  </div>
+        </div>
+    </div>
+</div>   
+    
+    
+<!-- Begin post excerpts, let's highlight the first 4 posts on top -->
+<div class="posts">
+  {% assign reviews = site.book_reviews %}
+  {% for review in reviews %}
+    <div class="post-teaser">
+        <div class="book_info">
+            
+            <div class="book_meta">
+              
+              <p>Author: {{ review.author }}</p>
+              <p>Rating:  <span class="stars-container stars-{{ review.stars | times:20 | round: 0 }}" title="{{ review.stars }}/5">★★★★★</span></p>
+              <p>Genre: {{ review.category }}</p>
+              
+              <p>Finished: {{ review.date | date: "%B %-d, %Y" }}</p>
+              
+            </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+</div>
