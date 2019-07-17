@@ -24,7 +24,7 @@
 </div>
 
 <div class="mb-5 d-flex justify-content-between main-loop-card">
-  {% if review.image %}
+  {% if review.cover %}
     <div class="pr-3">
       <a href="{{site.baseurl}}{{review.url}}">
       <img class="w-100" src="{% if review.image contains "://" %}{{ review.image }}{% else %}{{ site.baseurl }}/{{ review.image }}{% endif %}" alt="{{ review.title }}">
@@ -35,9 +35,6 @@
     <h2 class="mb-1 h4 font-weight-bold">
     <a class="text-dark" href="{{site.baseurl}}{{review.url}}">{{ review.title }}</a>
     </h2>
-    <p class="excerpt">
-       {{ review.excerpt  | strip_html | strip_newlines | truncate: 186}}
-    </p>
     <small class="d-block text-muted">
       In <span class="catlist">
       {% for category in review.categories %}
@@ -46,7 +43,16 @@
       </span>
     </small>
     <small class="text-muted">
-      {{ review.date | date: '%b %d, %Y' }}
+      <p>Author: {{ review.author }}</p>
+      <p>Rating:  <span class="stars-container stars-{{ review.stars | times:20 | round: 0 }}" title="{{ review.stars }}/5">★★★★★</span></p>
+      <p>Genre: {{ review.category }}</p>
+      <p>Themes: {% assign first = true %}{% for tag in review.tags %}{% unless first %},{% endunless %} {{ tag }}{% assign first = false %}{% endfor %}</p>
+      <p>Finished: {{ review.date | date: "%B %-d, %Y" }}</p>
     </small>
+    {% if review.excerpt %}<
+    <p class="excerpt">
+       {{ review.excerpt  | strip_html | strip_newlines | truncate: 186}}
+    </p>
+    {% endif %}
   </div>
 </div>
