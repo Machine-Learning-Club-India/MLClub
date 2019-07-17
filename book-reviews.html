@@ -30,7 +30,7 @@ permalink: "/book-reviews.html"
 <div class="row mt-3">
     <div class="col-md-8 main-loop">
         <h4 class="font-weight-bold spanborder"><span>All Books</span></h4>
-        {% for post in site.posts %}
+        {% for post in site.books %}
             {% include main-loop-book-card.html %}
         {% endfor %}
     </div>

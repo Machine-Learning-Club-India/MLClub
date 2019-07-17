@@ -37,6 +37,12 @@ defaults:
       layout: post
       author: Himanshu
       avatar: /assets/images/avatar_him.jpg
+
+  # all book reviews
+  - scope:
+      path: "_books"
+    values:
+      layout: book-reviews-template
       
   # all pages
   - scope:
@@ -53,7 +59,7 @@ paginate: 10
 
 # Collections
 collections:
-  book_reviews:
+  books:
     output: true
     output_ext: .html
     permalink: /book-reviews/:path/
