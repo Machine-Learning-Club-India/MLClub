@@ -17,9 +17,8 @@ permalink: "/book-reviews.html"
             <div class="col-md-5 pt-6 pb-6 align-self-center">
                 <h1 class="mb-3 font-weight-bold">Book Reviews</h1>
                 <p class="mb-3">
-                    Here are notes I've taken on books I've read. Some are in-depth, some are short, some include quotes. I've included ratings and genres for future sorting. excerpt: "My awesome reading notes. Some are in-depth, some are short, some include quotes. All are for me."
+                    Here are notes I've taken on books I've read. Some are in-depth, some are short, some include quotes. I've included ratings and genres for future sorting.
                 </p>
-                <a href="{{site.baseurl}}/about.html" class="btn btn-dark">Read More</a>
             </div>
             <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/assets/images/home.jpg);">  </div>
         </div>
@@ -27,9 +26,9 @@ permalink: "/book-reviews.html"
 </div>   
     
     
-<!-- Begin post excerpts, let's highlight the first 4 posts on top -->
+<!-- Begin post excerpts -->
 <div class="posts">
-  {% for review in site.book_reviews %}
+  {% for review in site.books %}
         {% include main-loop-book-card.html %}
   {% endfor %}
 </div>
