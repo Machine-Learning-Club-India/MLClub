@@ -1,0 +1,14 @@
+    <div class="post-teaser">
+        <div class="book_info">
+            
+            <div class="book_meta">
+              
+              <p>Author: {{ review.author }}</p>
+              <p>Rating:  <span class="stars-container stars-{{ review.stars | times:20 | round: 0 }}" title="{{ review.stars }}/5">★★★★★</span></p>
+              <p>Genre: {{ review.category }}</p>
+              
+              <p>Finished: {{ review.date | date: "%B %-d, %Y" }}</p>
+              
+            </div>
+      </div>
+    </div>

@@ -2,7 +2,7 @@
 title: "Machine Learning Club"
 layout: default
 pagination:
-    enabled: true
+    enabled: false
 description: "Book Reviews"
 permalink: "/book-reviews.html"
 ---
@@ -29,23 +29,20 @@ permalink: "/book-reviews.html"
     
 <!-- Begin post excerpts, let's highlight the first 4 posts on top -->
 <div class="posts">
-  {% assign reviews = site.book_reviews %}
-  {% for review in reviews %}
-    <div class="post-teaser">
-        <div class="book_info">
-            
-            <div class="book_meta">
-              
-              <p>Author: {{ review.author }}</p>
-              <p>Rating:  <span class="stars-container stars-{{ review.stars | times:20 | round: 0 }}" title="{{ review.stars }}/5">★★★★★</span></p>
-              <p>Genre: {{ review.category }}</p>
-              
-              <p>Finished: {{ review.date | date: "%B %-d, %Y" }}</p>
-              
-            </div>
-      </div>
-    </div>
+  {% for review in site.book_reviews %}
+        {% include main-loop-book-card.html %}
   {% endfor %}
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-8 main-loop">
+        <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
+        {% for post in site.posts %}
+        
+            {% include main-loop-card.html %}
+        
+        {% endfor %}
+    </div>
 </div>
 
 </div>
