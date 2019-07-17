@@ -9,7 +9,7 @@ tags:
 - Focus
 stars: 4
 book-link: http://amzn.to/2gaSjqy
-cover: deep_work.jpg
+cover: assets/images/deep_work.jpg
 format: Audio Book
 date: 2016-11-28
 excerpt: "Deep work is the ability to focus without distraction on a cognitively demanding task. It produces great results."
