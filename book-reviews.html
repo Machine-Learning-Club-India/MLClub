@@ -26,20 +26,12 @@ permalink: "/book-reviews.html"
 </div>   
     
     
-<!-- Begin post excerpts -->
-<div class="posts">
-  {% for review in site.books %}
-        {% include main-loop-book-card.html %}
-  {% endfor %}
-</div>
-
+<!-- Begin book excerpts -->
 <div class="row mt-3">
     <div class="col-md-8 main-loop">
-        <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
+        <h4 class="font-weight-bold spanborder"><span>All Books</span></h4>
         {% for post in site.posts %}
-        
-            {% include main-loop-card.html %}
-        
+            {% include main-loop-book-card.html %}
         {% endfor %}
     </div>
 </div>
