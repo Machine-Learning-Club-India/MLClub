@@ -1,23 +1,25 @@
 <div class="mb-5 d-flex justify-content-between main-loop-card">
   {% if review.cover %}
-    <div class="pr-3">
+    <div class="col-md-4">
       <a href="{{site.baseurl}}{{review.url}}">
-      <img class="w-100" src="{% if review.image contains "://" %}{{ review.image }}{% else %}{{ site.baseurl }}/{{ review.image }}{% endif %}" alt="{{ review.title }}">
+      <img class="w-100" src="{% if review.cover contains "://" %}{{ review.cover }}{% else %}{{ site.baseurl }}/{{ review.cover }}{% endif %}" alt="{{ review.title }}">
       </a>
     </div>
   {% endif %}
-  <div class="col-md-8 pr-0 text-left">
+  <div>
     <!-- Title -->
-    <h2 class="mb-1 h4 font-weight-bold">
+    <h2 class="mb-2 h6 font-weight-bold">
     <a class="text-dark" href="{{site.baseurl}}{{review.url}}">{{ review.title }}</a>
     </h2>
     <!-- Books Meta Data -->
-    <p>Author: {{ review.author }}</p>
-    <p>Rating:  <span class="stars-container stars-{{ review.stars | times:20 | round: 0 }}" title="{{ review.stars }}/5">★★★★★</span></p>
-    <p>Genre: {% for category in review.categories %}<a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-    {% endfor %}</p>
-    <p>Themes: {% assign first = true %}{% for tag in review.tags %}{% unless first %},{% endunless %} {{ tag }}{% assign first = false %}{% endfor %}</p>
-    <p>Finished: {{ review.date | date: "%B %-d, %Y" }}</p>
+    <small class="d-block text-muted">
+      <p>Author: {{ review.author }}</p>
+      <p>Rating:  <span class="stars-container stars-{{ review.stars | times:20 | round: 0 }}" title="{{ review.stars }}/5">★★★★★</span></p>
+      <p>Genre: {% for category in review.categories %}<a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+      {% endfor %}</p>
+      <p>Themes: {% assign first = true %}{% for tag in review.tags %}{% unless first %},{% endunless %} {{ tag }}{% assign first = false %}{% endfor %}</p>
+      <p>Finished: {{ review.date | date: "%B %-d, %Y" }}</p>
+    </small>
     <!-- One line Detail -->
     {% if review.excerpt %}
     <p class="excerpt">
