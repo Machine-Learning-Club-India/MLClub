@@ -1,10 +1,19 @@
 --- 
 layout: book-reviews-template
-title: "Deep Work - Rules for Focused Success in a Distracted World"
-author: himanshu
+title: Deep Work - Rules for Focused Success in a Distracted World
+author: Cal Newport
 category: Self-Improvement
+tags: 
+- Time management
+- Work
+- Focus
+stars: 4
+book-link: http://amzn.to/2gaSjqy
+cover: deep_work.jpg
+format: Audio Book
+date: 2016-11-28
+excerpt: "Deep work is the ability to focus without distraction on a cognitively demanding task. It produces great results."
 ---
-
 After hearing a few interviews with Cal Newport on podcasts, I decided to pick this up. The book is divided into two main sections: The idea or "why" behind deep work, in which Newport tries to convince you it is necessary. I more or less bought in to this before listening to the book, but I listened to it anyway. The second part are the rules for how to do deep work. Newport writes this from an academic's point of view, but there are definitely universal principles you can apply.
 
 ## The Idea
