@@ -51,7 +51,12 @@ highlighter: rouge
 # Paginate
 paginate: 10
 
-
+# Collections
+collections:
+  book_reviews:
+    output: true
+    output_ext: .html
+    permalink: /book-reviews/:path/
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
 exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
