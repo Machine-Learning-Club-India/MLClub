@@ -26,7 +26,5 @@
        {{ review.excerpt  | strip_html | strip_newlines | truncate: 186}}
     </p>
     {% endif %}
-    <!-- Click Button -->
-    <a class="button" href="{{ review.url | prepend: site.baseurl }}">Read full notes</a>
   </div>
 </div>
